@@ -1,0 +1,31 @@
+{
+  "type": "object",
+  "required": [
+    "checkbox"
+  ],
+  "properties": {
+    "checkbox": {
+      "type": "boolean"
+    }
+  },
+  "if": {
+    "required": [
+      "checkbox"
+    ],
+    "properties": {
+      "checkbox": {
+        "const": true
+      }
+    }
+  },
+  "then": {
+    "required": [
+      "text"
+    ],
+    "properties": {
+      "text": {
+        "type": "string"
+      }
+    }
+  }
+}
